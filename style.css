@@ -1,3 +1,14 @@
+body {
+
+  background: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 22px;
+  line-height: 30px;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 header {
   background-color: bisque;
   padding: 20px;
@@ -9,24 +20,32 @@ header {
   align-items: center;
 }
 
-.icons {
+.icon-box {
   display: flex;
   flex-direction: row;
   position: absolute;
   top: 8px;
   right: 16px;
   margin: 30px 10px 30px 10px;
+  object-fit: cover;
+
 }
 
 
-.icon {
+.icon-link {
   margin: 2px;
   width: 31px;
   height: 30px;
-  border: 2px solid white;
+  border: 3px solid white;
   padding: 2px;
   border-radius: 120px;
   opacity: 1;
+  text-align: center;
+  padding: 5px;
+}
+
+.icon {
+  width: 25px;
 }
 
 .flex {
@@ -38,7 +57,7 @@ header {
 }
 
 .flex-item-1 {
-  font-family: 'CustomFont', Roboto, regular;
+  font-family: 'Roboto', serif;
   color: white;
   font-size: 12px;
   text-align: justify;
@@ -47,37 +66,40 @@ header {
 }
 
 .flex-item-2 {
-  font-family: 'CustomFont', montserrat, bold;
-  font-weight: bold;
+  font-family: 'Montserrat';
+  font-weight: bolder;
   color: white;
-  font-size: 35px;
+  font-size: 63px;
   text-align: justify;
+  margin:20px;
 
 
 }
 
 .flex-item-3 {
-  font-family: 'CustomFont', montserrat, bold;
+  font-family: 'montserrat', bold;
   font-weight: bold;
   color: white;
-  font-size: 36px;
+  font-size: 58px;
   text-align: justify;
+  margin: 20px;
 }
 
+
 .flex-item-4 {
-  font-family: 'CustomFont', montserrat, bold;
+  font-family: 'montserrat', bold;
   font-weight: bold;
   color: white;
-  font-size: 23px;
+  font-size: 38px;
   text-align: justify;
+  margin: 20px;
 }
 
 .me {
   position: absolute;
   right: 16px;
   margin: 20px 10px 20px 10px;
-  border: 2px solid white;
-  padding: 2px;
+  border: 4px solid white;
   border-radius: 120px;
   opacity: 1;
   width: 150px;
@@ -85,8 +107,153 @@ header {
 }
 
 .sectionA {
-  background-color: #F4F4F4;
+  background-color: white;
   padding: 50px;
+  font-family: 'montserrat';
+  align-content: stretch;
+}
+
+.text-area {
+  margin: 10px 10%;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 50px;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+
+.redline {
+  height: 3px;
+  width: 50px;
+  background: red;
+  position: relative;
+  float: left;
+  top: 12px;
+  margin-right: 10px;
+}
+
+.redline::after {
+  content: '';
+  height: 10px;
+  width: 10px;
+  position: relative;
+  float: right;
+  top: -3px;
+  right: -1px;
+  border-radius: 50%;
+  background: red;
+}
+
+.sectionB {
   text-align: center;
-  font-family: 'CustomFont', montserrat;
+  font-family: 'Montserrat', sans-serif;
+  height: auto;
+  margin: 10px 0px;
+  padding: 30px 20%;
+  background-color: rgb(227, 194, 194)
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+span {
+  color: red;
+  font-weight: bold;
+}
+
+.sectionC {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100%;
+  padding: 30px 10px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.sectionD {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  height: auto;
+  margin: 10px 0px;
+  padding: 30px 20%;
+  background-color: rgb(227, 194, 194)
+}
+
+.sectionE {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 20px;
+  max-width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color:black;
+}
+
+h5 {
+  text-transform: uppercase;
+  background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 30px;
+  margin: 10px 5px;
+}
+
+.sectionF {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(206, 189, 176);
+  max-width: 90%;
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(227, 194, 194);
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  width: 80%;
+}
+
+.footer-btn {
+  border: 3px solid white;
+  object-fit: cover;
+  display: flex;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+btn-footer-img {
+  height: 60px;
+  width: 60px;
+}
+
+.final {
+  color: white;
 }
