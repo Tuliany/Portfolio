@@ -357,11 +357,14 @@ a {
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
+  margin:5px;
 }
 
 .article {
   height: 220px;
   width: 250px;
+  margin:5px;
+
 }
 
 .articleTitle {
